@@ -1,0 +1,920 @@
+/* =============================
+   VARIABLES CSS (RACINE DU DOC)
+   ============================ */
+:root {
+    --bg: #f7f5f1;
+    --surface: #ffffff;
+    --surface-soft: #eef3f1;
+    --text: #1f2933;
+    --muted: #5f6c76;
+    --primary: #2f6f62;
+    --primary-dark: #1f5147;
+    --accent: #d98f70;
+    --accent-dark: #c87d5c;
+    --border: #d8e0dc;
+    --shadow: 0 10px 30px rgba(31, 41, 51, 0.08);
+    --radius: 18px;
+    --radius-lg: 28px;
+    --container: 1180px;
+}
+
+/* =========================
+   STYLE GLOBAL
+   ========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Inter", Arial, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Conteneurs principaux */
+#barre-haut,
+#conteneur,
+#contenu-navigation,
+#contenu-presentation,
+#contenu-publicite,
+#contenu-footer,
+#contenu-pathologie {
+    width: min(92%, var(--container));
+    margin: 0 auto;
+}
+
+/* =========================
+   HEADER 
+   ========================= */
+
+#entete {
+    background: linear-gradient(rgba(20, 45, 40, 0.72), rgba(20, 45, 40, 0.72)),
+                url("images/header-alzheimer.jpg") center/cover no-repeat;
+    color: #fff;
+}
+
+#barre-haut {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    padding: 22px 0;
+}
+
+#bloc-logo {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+#logo-rond {
+    width: 82px;
+    height: 82px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.14);
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+#logo-rond img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#texte-logo {
+    display: flex;
+    flex-direction: column;
+}
+
+#texte-logo h1 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+#texte-logo p {
+    margin: 0;
+    font-size: 0.92rem;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+#menu {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#menu li {
+    margin: 0;
+}
+
+#menu a {
+    display: inline-block;
+    padding: 10px 14px;
+    border-radius: 999px;
+    color: #fff;
+    font-size: 0.95rem;
+    transition: 0.2s ease;
+}
+
+#menu a:hover,
+#menu a.actif {
+    background: rgba(255, 255, 255, 0.16);
+}
+
+/* =========================
+   BOUTONS 
+   ========================= */
+
+.bouton,
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 22px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 16px;
+    border: 1px solid transparent;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.bouton-orange,
+.btn-principal {
+    background: var(--accent);
+    color: #fff;
+}
+
+.bouton-orange:hover,
+.btn-principal:hover {
+    background: var(--accent-dark);
+}
+
+.bouton-contour,
+.btn-secondaire {
+    background: transparent;
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.bouton-contour:hover,
+.btn-secondaire:hover {
+    background: rgba(47, 111, 98, 0.08);
+}
+
+#accueil .bouton-contour {
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.35);
+}
+
+#accueil .bouton-contour:hover {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+/* =========================
+   PAGE D'ACCUEIL : 
+   ========================= */
+
+#accueil {
+    background: linear-gradient(rgba(20, 45, 40, 0.72), rgba(20, 45, 40, 0.72)),
+                url("images/header-alzheimer.jpg") center/cover no-repeat;
+    color: #fff;
+    padding: 56px 0 72px;
+}
+
+#accueil #conteneur {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 32px;
+    align-items: center;
+}
+
+#texte-accueil {
+    min-width: 0;
+}
+
+#texte-accueil h2 {
+    margin-top: 0;
+    margin-bottom: 18px;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: clamp(2.8rem, 5vw, 5.2rem);
+    line-height: 1.02;
+    color: #fff;
+}
+
+#texte-accueil p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.08rem;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 760px;
+}
+
+#boutons-accueil {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin: 28px 0;
+}
+
+#liste-points {
+    list-style: none;
+    display: grid;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+#liste-points li {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
+}
+
+#liste-points li::before {
+    content: "• ";
+    color: var(--accent);
+    font-weight: 700;
+}
+
+#carte-accueil {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+#carte-accueil img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+#texte-carte {
+    padding: 24px;
+}
+
+#texte-carte h3 {
+    margin-top: 0;
+    margin-bottom: 14px;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    color: #fff;
+    line-height: 1.12;
+}
+
+#texte-carte p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.02rem;
+}
+
+/* =========================
+   NAVIGATION RAPIDE
+   ========================= */
+
+#navigation-rapide {
+    background: var(--bg);
+    padding: 72px 0;
+}
+
+#petit-titre,
+#petit-titre-presentation,
+#petit-titre-pathologie,
+#petit-titre-publicite {
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.82rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#navigation-rapide h2,
+#texte-presentation h2,
+#texte-publicite h2,
+#texte-pathologie h2 {
+    margin-top: 0;
+    margin-bottom: 18px;
+    font-family: "Playfair Display", Georgia, serif;
+    line-height: 1.12;
+}
+
+#navigation-rapide h2 {
+    margin-bottom: 30px;
+    font-size: clamp(2rem, 3vw, 3.4rem);
+}
+
+#blocs-navigation {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.bloc {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 28px;
+}
+
+.numero-bloc {
+    display: inline-block;
+    margin-bottom: 14px;
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.bloc h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 1.35rem;
+    line-height: 1.3;
+}
+
+.bloc p {
+    margin-top: 0;
+    margin-bottom: 16px;
+    color: var(--muted);
+}
+
+.bloc a {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+/* =========================
+   PRESENTATION
+   ========================= */
+
+#presentation-site {
+    background: var(--surface-soft);
+    padding: 72px 0;
+}
+
+#contenu-presentation {
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    gap: 28px;
+    align-items: start;
+}
+
+#texte-presentation {
+    min-width: 0;
+}
+
+#texte-presentation h2 {
+    font-size: clamp(2rem, 3vw, 3.2rem);
+}
+
+#texte-presentation p {
+    margin-top: 0;
+    margin-bottom: 18px;
+    color: var(--text);
+    max-width: 780px;
+}
+
+#bloc-resume {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 24px;
+}
+
+#bloc-resume h3 {
+    margin-top: 0;
+    margin-bottom: 14px;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 1.7rem;
+}
+
+#liste-resume {
+    padding-left: 22px;
+}
+
+#liste-resume li {
+    margin-bottom: 10px;
+    color: var(--text);
+}
+
+#liste-resume li::marker {
+    color: var(--accent);
+}
+
+/* =========================
+   PATHOLOGIE
+   Section sur la maladie d'Alzheimer.
+   ========================= */
+
+#carte-pathologie {
+    background: var(--bg);
+    padding: 72px 0;
+}
+
+#contenu-pathologie {
+    display: grid;
+    grid-template-columns: 1fr 0.9fr;
+    gap: 28px;
+    align-items: center;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 32px;
+    box-shadow: var(--shadow);
+}
+
+#texte-pathologie {
+    min-width: 0;
+}
+
+#texte-pathologie h2 {
+    font-size: clamp(2.2rem, 4vw, 4rem);
+    color: var(--text);
+}
+
+#texte-pathologie p {
+    margin-top: 0;
+    margin-bottom: 18px;
+    color: var(--muted);
+    font-size: 1.05rem;
+    max-width: 680px;
+}
+
+#liste-pathologie {
+    margin: 0 0 26px 0;
+    padding-left: 22px;
+}
+
+#liste-pathologie li {
+    margin-bottom: 10px;
+    color: var(--text);
+}
+
+#liste-pathologie li::marker {
+    color: var(--accent);
+}
+
+#visuel-pathologie {
+    min-width: 0;
+}
+
+#visuel-pathologie img {
+    width: 100%;
+    height: 100%;
+    max-height: 420px;
+    object-fit: cover;
+    border-radius: var(--radius);
+}
+
+.schema figcaption {
+    margin-top: 10px;
+    font-style: italic;
+    color: #555;
+}
+
+/* =========================
+   PAGE RECOMMANDATIONS / API
+   ========================= */
+
+main#conteneur {
+    padding: 72px 0;
+}
+
+.introduction-page {
+    margin-bottom: 32px;
+}
+
+.intro {
+    text-align: center;
+    max-width: 560px;
+    margin: 0 auto;
+    font-size: 1.08rem;
+    line-height: 1.7;
+    color: var(--text);
+}
+
+.introduction-page img,
+.intro img {
+    display: block;
+    width: 100%;
+    max-width: 560px;
+    margin: 24px auto 0;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+}
+
+.colonne-droite {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.bloc-formulaire,
+.bloc-resultats {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow);
+    padding: 30px;
+    width: 100%;
+}
+
+.bloc-resultats {
+    min-height: 220px;
+}
+
+.bloc-formulaire h2,
+.bloc-resultats h2 {
+    margin-top: 0;
+    margin-bottom: 18px;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 2rem;
+    line-height: 1.15;
+    color: var(--text);
+}
+
+.champ {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.champ-large {
+    margin-bottom: 22px;
+}
+
+.bloc-formulaire .bloc-resultats,
+.grille-formulaire {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+label {
+    font-weight: 600;
+    color: var(--primary);
+    font-size: 0.95rem;
+}
+
+input,
+select {
+    padding: 14px 16px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    font-size: 16px;
+    background-color: #fff;
+    color: var(--text);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(47, 111, 98, 0.14);
+}
+
+select:disabled {
+    background-color: #f1f1ef;
+    color: #777;
+    cursor: not-allowed;
+}
+
+.actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 24px;
+}
+
+.message {
+    margin-top: 18px;
+    font-weight: 600;
+    padding: 12px 14px;
+    border-radius: 12px;
+}
+
+.message.success {
+    color: var(--primary-dark);
+    background: rgba(47, 111, 98, 0.08);
+}
+
+.message.error {
+    color: #a12c2c;
+    background: rgba(161, 44, 44, 0.08);
+}
+
+.message.warning {
+    color: #9a6700;
+    background: rgba(154, 103, 0, 0.08);
+}
+
+.message.info {
+    color: #1f4f82;
+    background: rgba(31, 79, 130, 0.08);
+}
+
+.resume-resultats {
+    margin: 10px 0 18px;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.liste-resultats {
+    display: grid;
+    gap: 16px;
+}
+
+.carte-resultat {
+    border: 1px solid var(--border);
+    background-color: #fcfcfa;
+    border-radius: var(--radius);
+    padding: 22px;
+    box-shadow: var(--shadow);
+}
+
+.carte-resultat h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    color: var(--primary);
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 1.5rem;
+}
+
+.carte-resultat p {
+    margin: 8px 0;
+    line-height: 1.6;
+    color: var(--muted);
+}
+
+.meta {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.badge {
+    display: inline-block;
+    background-color: var(--primary);
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.badge-secondaire {
+    background-color: var(--accent);
+}
+
+.source {
+    color: #6a6f73;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.etat-vide {
+    border: 1px dashed var(--border);
+    border-radius: var(--radius);
+    padding: 22px;
+    background: #fcfcfa;
+}
+
+.etat-vide p {
+    margin: 0;
+    color: var(--muted);
+}
+
+/* =========================
+   PUBLICITE
+   ========================= */
+
+#publicite {
+    background: var(--bg);
+    padding: 72px 0;
+}
+
+#contenu-publicite {
+    display: grid;
+    grid-template-columns: 1fr 0.9fr;
+    gap: 28px;
+    align-items: center;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 30px;
+    box-shadow: var(--shadow);
+}
+
+#texte-publicite {
+    min-width: 0;
+}
+
+#texte-publicite h2 {
+    font-size: clamp(2rem, 3vw, 3rem);
+    line-height: 1.15;
+}
+
+#texte-publicite p {
+    margin-top: 0;
+    margin-bottom: 24px;
+    color: var(--text);
+    max-width: 620px;
+}
+
+#visuel-publicite {
+    min-width: 0;
+}
+
+#visuel-publicite img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+/* =========================
+   FOOTER
+   Pied de page commun.
+   ========================= */
+
+#pied-page {
+    background: #183730;
+    color: #f1f5f3;
+    padding: 48px 0;
+}
+
+#contenu-footer {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr 1fr;
+    gap: 28px;
+}
+
+.colonne-footer h2 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.colonne-footer h3 {
+    margin-top: 0;
+    margin-bottom: 14px;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.colonne-footer p,
+.colonne-footer a {
+    color: rgba(241, 245, 243, 0.82);
+}
+
+.colonne-footer a:hover {
+    text-decoration: underline;
+}
+
+/* =============
+PAGE ANALAYSE
+================ */
+.table-container {
+    overflow-x: auto;
+    margin-top: 1rem;
+}
+
+.tableau-descriptif, .tableau-stats {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    font-size: 0.95rem;
+}
+
+.tableau-descriptif th,
+.tableau-descriptif td,
+.tableau-stats th,
+.tableau-stats td {
+    border: 1px solid grey;
+    padding: 0.6rem;
+    text-align: center;
+}
+
+.tableau-descriptif th
+.tableau-stats th {
+    background-color: white;
+    font-weight: 600;
+}
+
+
+
+    
+
+/* =========================
+   RESPONSIVE
+   Adaptation tablette et mobile.
+   ========================= */
+
+@media (max-width: 960px) {
+    #barre-haut {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #menu {
+        justify-content: flex-start;
+    }
+
+    #accueil #conteneur,
+    #blocs-navigation,
+    #contenu-presentation,
+    #contenu-publicite,
+    #contenu-footer,
+    #contenu-pathologie,
+    .bloc-formulaire .bloc-resultats,
+    .grille-formulaire {
+        grid-template-columns: 1fr;
+    }
+
+    main#conteneur {
+        padding: 54px 0;
+    }
+
+    .intro {
+        max-width: none;
+    }
+}
+
+@media (max-width: 640px) {
+    #accueil {
+        padding: 42px 0 54px;
+    }
+
+    #boutons-accueil,
+    .actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .bouton,
+    .btn {
+        width: 100%;
+    }
+
+    .bloc,
+    #bloc-resume,
+    #contenu-publicite,
+    .bloc-formulaire,
+    .bloc-resultats {
+        padding: 22px;
+    }
+
+    #logo-rond {
+        width: 68px;
+        height: 68px;
+    }
+
+    #texte-logo p {
+        font-size: 0.84rem;
+    }
+
+    #carte-accueil img,
+    #visuel-publicite img {
+        height: auto;
+    }
+}

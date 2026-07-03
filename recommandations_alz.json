@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "categorie": "depistage",
+    "sous_categorie": "population_generale",
+    "public": "professionnel",
+    "titre": "Ne pas dépister en population générale",
+    "contenu": "Le dépistage systématique de la maladie d’Alzheimer n’est pas recommandé en population générale dans l’état actuel des connaissances.",
+    "source": "HAS - Maladie d’Alzheimer et maladies apparentées : diagnostic et prise en charge, 2011"
+  },
+  {
+    "id": 2,
+    "categorie": "diagnostic_precoce",
+    "sous_categorie": "plainte_cognitive",
+    "public": "professionnel",
+    "titre": "Proposer une démarche diagnostique en cas de plainte récente",
+    "contenu": "Une démarche diagnostique doit être proposée lorsqu’une personne signale une modification récente de sa cognition ou de son état psychique.",
+    "source": "HAS - Maladie d’Alzheimer et maladies apparentées : diagnostic et prise en charge, 2011"
+  },
+  {
+    "id": 3,
+    "categorie": "diagnostic_precoce",
+    "sous_categorie": "alerte_entourage",
+    "public": "professionnel",
+    "titre": "Prendre au sérieux les observations de l’entourage",
+    "contenu": "Une évaluation doit être envisagée lorsque l’entourage remarque une aggravation des troubles cognitifs ou un changement psychocomportemental inexpliqué.",
+    "source": "HAS - Maladie d’Alzheimer et maladies apparentées : diagnostic et prise en charge, 2011"
+  },
+  {
+    "id": 4,
+    "categorie": "diagnostic_precoce",
+    "sous_categorie": "situations_cliniques",
+    "public": "professionnel",
+    "titre": "Évaluer la cognition dans certaines situations à risque",
+    "contenu": "Une évaluation cognitive doit être envisagée après une chute, un syndrome confusionnel, un AVC ou à l’entrée et au cours du séjour en structure d’hébergement.",
+    "source": "HAS - Maladie d’Alzheimer et maladies apparentées : diagnostic et prise en charge, 2011"
+  },
+  {
+    "id": 5,
+    "categorie": "diagnostic_precoce",
+    "sous_categorie": "benefices",
+    "public": "patient_aidant",
+    "titre": "Favoriser un diagnostic précoce utile",
+    "contenu": "Un diagnostic précoce peut améliorer la qualité de vie, limiter les situations de crise, retarder l’entrée en institution et permettre au patient d’être acteur de sa prise en charge.",
+    "source": "HAS - Maladie d’Alzheimer et maladies apparentées : diagnostic et prise en charge, 2011"
+  },
+  {
+    "id": 6,
+    "categorie": "evaluation_initiale",
+    "sous_categorie": "entretien",
+    "public": "professionnel",
+    "titre": "Réaliser un entretien avec le patient et si possible un accompagnant",
+    "contenu": "L’évaluation initiale doit comporter un entretien avec le patient et, si possible avec son accord, avec un accompagnant capable de fournir des informations fiables.",
+    "source": "HAS - Maladie d’Alzheimer et maladies apparentées : diagnostic et prise en charge, 2011"
+  },
+  {
+    "id": 7,
+    "categorie": "evaluation_initiale",
+    "sous_categorie": "antecedents",
+    "public": "professionnel",
+    "titre": "Rechercher les antécédents et facteurs aggravants",
+    "contenu": "L’entretien doit rechercher les antécédents vasculaires, psychiatriques, traumatiques, familiaux, les prises de médicaments, d’alcool ou de toxiques, ainsi qu’un syndrome confusionnel antérieur.",
+    "source": "HAS - Maladie d’Alzheimer et maladies apparentées : diagnostic et prise en charge, 2011"
+  },
+  {
+    "id": 8,
+    "categorie": "evaluation_initiale",
+    "sous_categorie": "retentissement",
+    "public": "professionnel",
+    "titre": "Évaluer le retentissement dans la vie quotidienne",
+    "contenu": "Le retentissement des troubles doit être apprécié sur les activités instrumentales et de base de la vie quotidienne, par exemple avec les échelles IADL et ADL.",
+    "source": "HAS - Maladie d’Alzheimer et maladies apparentées : diagnostic et prise en charge, 2011"
+  },
+  {
+    "id": 9,
+    "categorie": "evaluation_initiale",
+    "sous_categorie": "mmse",
+    "public": "professionnel",
+    "titre": "Utiliser une évaluation cognitive standardisée",
+    "contenu": "Une évaluation cognitive globale standardisée est recommandée, notamment avec le MMSE, en tenant compte de l’âge, du niveau socioculturel et de l’état affectif du patient.",
+    "source": "HAS - Maladie d’Alzheimer et maladies apparentées : diagnostic et prise en charge, 2011"
+  },
+  {
+    "id": 10,
+    "categorie": "diagnostic",
+    "sous_categorie": "causes_alternatives",
+    "public": "professionnel",
+    "titre": "Rechercher des causes non neurodégénératives",
+    "contenu": "Avant de conclure à une maladie d’Alzheimer, il faut rechercher des causes ou facteurs aggravants comme une dépression, une iatrogénie, un trouble métabolique, une infection, une maladie cardiovasculaire ou des apnées du sommeil.",
+    "source": "HAS - Maladie d’Alzheimer et maladies apparentées : diagnostic et prise en charge, 2011"
+  },
+  {
+    "id": 11,
+    "categorie": "examens",
+    "sous_categorie": "biologie",
+    "public": "professionnel",
+    "titre": "Prescrire les examens biologiques de base selon le contexte",
+    "contenu": "En cas de trouble cognitif avéré, des examens biologiques de base sont recommandés, notamment TSH, hémogramme, CRP, natrémie, calcémie, glycémie, albuminémie et bilan rénal.",
+    "source": "HAS - Maladie d’Alzheimer et maladies apparentées : diagnostic et prise en charge, 2011"
+  },
+  {
+    "id": 12,
+    "categorie": "examens",
+    "sous_categorie": "imagerie",
+    "public": "professionnel",
+    "titre": "Réaliser une imagerie cérébrale en cas de trouble cognitif récent",
+    "contenu": "Une imagerie cérébrale systématique est recommandée devant un trouble cognitif avéré de découverte récente, de préférence une IRM, ou à défaut un scanner.",
+    "source": "HAS - Maladie d’Alzheimer et maladies apparentées : diagnostic et prise en charge, 2011"
+  },
+  {
+    "id": 13,
+    "categorie": "orientation",
+    "sous_categorie": "avis_specialise",
+    "public": "professionnel",
+    "titre": "Demander un avis spécialisé si un déclin cognitif est probable",
+    "contenu": "Si l’évaluation initiale est en faveur d’un déclin cognitif, le médecin généraliste doit demander un avis spécialisé et mettre en œuvre si besoin des mesures d’aide ou d’urgence.",
+    "source": "HAS - Maladie d’Alzheimer et maladies apparentées : diagnostic et prise en charge, 2011"
+  },
+  {
+    "id": 14,
+    "categorie": "annonce",
+    "sous_categorie": "consultation_dediee",
+    "public": "professionnel",
+    "titre": "Prévoir une consultation d’annonce dédiée",
+    "contenu": "L’annonce du diagnostic doit être faite explicitement par le spécialiste au cours d’une consultation longue, dédiée et adaptée au rythme d’appropriation du patient.",
+    "source": "HAS - Maladie d’Alzheimer et maladies apparentées : annonce et accompagnement du diagnostic, 2009"
+  },
+  {
+    "id": 15,
+    "categorie": "prise_en_charge",
+    "sous_categorie": "plan_soins",
+    "public": "professionnel",
+    "titre": "Mettre en place un plan de soins et d’aides personnalisé",
+    "contenu": "Après le diagnostic, un plan de soins et d’aides doit être mis en place selon la situation clinique et sociale du patient, avec coordination entre spécialistes, médecin traitant et structures adaptées.",
+    "source": "HAS - Maladie d’Alzheimer et maladies apparentées : annonce et accompagnement du diagnostic, 2009"
+  },
+  {
+    "id": 16,
+    "categorie": "interventions_non_medicamenteuses",
+    "sous_categorie": "approche_globale",
+    "public": "patient_aidant",
+    "titre": "Associer des interventions non médicamenteuses",
+    "contenu": "La prise en charge ne repose pas uniquement sur les médicaments et doit inclure, selon les besoins, des interventions sur la qualité de vie, la cognition, l’activité motrice, le comportement, ainsi qu’un accompagnement psychologique ou psychiatrique.",
+    "source": "HAS - Maladie d’Alzheimer et maladies apparentées : diagnostic et prise en charge, 2011"
+  },
+  {
+    "id": 17,
+    "categorie": "aidants",
+    "sous_categorie": "soutien",
+    "public": "aidant",
+    "titre": "Mettre en place un soutien spécifique pour les aidants",
+    "contenu": "Les aidants doivent bénéficier d’un accompagnement spécifique pouvant comprendre écoute, aide à la personne, repérage de l’épuisement et, si besoin, soins médicaux ou paramédicaux.",
+    "source": "HAS - Maladie d’Alzheimer et maladies apparentées : annonce et accompagnement du diagnostic, 2009"
+  },
+  {
+    "id": 18,
+    "categorie": "suivi",
+    "sous_categorie": "medecin_traitant",
+    "public": "professionnel",
+    "titre": "Assurer un suivi standardisé régulier",
+    "contenu": "Les patients doivent bénéficier d’un suivi standardisé au moins annuel, ou plus tôt en cas de modification de l’état de santé ou de l’environnement.",
+    "source": "HAS - Maladie d’Alzheimer et maladies apparentées : diagnostic et prise en charge, 2011"
+  },
+  {
+    "id": 19,
+    "categorie": "suivi",
+    "sous_categorie": "contenu_consultation",
+    "public": "professionnel",
+    "titre": "Contrôler l’état général et les comorbidités à chaque consultation",
+    "contenu": "Le suivi doit inclure le poids, l’état nutritionnel, la pression artérielle, le pouls, les comorbidités, l’observance, la tolérance des traitements et l’efficacité des interventions non médicamenteuses.",
+    "source": "HAS - Maladie d’Alzheimer et maladies apparentées : diagnostic et prise en charge, 2011"
+  },
+  {
+    "id": 20,
+    "categorie": "securite",
+    "sous_categorie": "environnement_juridique",
+    "public": "patient_aidant",
+    "titre": "Évaluer les risques du domicile et les situations juridiques",
+    "contenu": "Le suivi doit prendre en compte les risques de l’environnement, l’isolement, la conduite automobile, l’usage d’objets dangereux, la gestion des finances et, si nécessaire, la mise en place d’une protection juridique.",
+    "source": "HAS - Maladie d’Alzheimer et maladies apparentées : diagnostic et prise en charge, 2011"
+  }
+]
