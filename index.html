@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <!-- Responsive petits écrans -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groupe HMD - Accueil</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Logo + menu principal -->
+    <header id="entete">
+        <div id="barre-haut">
+            <div id="bloc-logo">
+                <a href="index.html" id="lien-logo" aria-label="Retour à la page d'accueil">
+                    <div id="logo-rond">
+                        <img src="images/logo-HMD.png" alt="Logo HMD">
+                    </div>
+                </a>
+
+                <div id="texte-logo">
+                    <h1>Groupe HMD</h1>
+                    <p>Alzheimer & données de santé</p>
+                </div>
+            </div>
+            <!-- Menu de navigation principal -->
+            <nav>
+                <ul id="menu">
+                    <li><a href="#carte-pathologie">Maladie</a></li>
+                    <li><a href="base-donnees.html">Base de données</a></li>
+                    <li><a href="analyses.html">Analyses</a></li>
+                    <li><a href="recommandations.html">Recommandations</a></li>
+                    <li><a href="ressources.html">Ressources</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Première section : introduction -->
+        <section id="accueil">
+            <div id="conteneur">
+                <div id="texte-accueil">
+                    <h2>Prévenir la maladie d'Alzheimer</h2>
+                    <p>
+                        <strong>Découvrez la pathologie d'Alzheimer :</strong> une base de données (créée par nos soins) en santé
+                        et des résultats dans une perspective de prévention en santé publique. L'étude de corrélations possibles entre différentes variables et la maladie d'Alzheimer.
+                        Et également des recommandations en fonctions de vos préferences.
+                    </p>
+
+                    <div id="boutons-accueil">
+                        <a href="analyses.html" class="bouton bouton-orange">Voir les analyses</a>
+                        <a href="interrogation.php" class="bouton bouton-contour">Interroger la base</a>
+                    </div>
+
+                    <ul id="liste-points">
+                        <li>Explication de la pathologie</li>
+                        <li>Données structurées et documentées</li>
+                        <li>Visualisations statistiques</li>
+                    </ul>
+                </div>
+
+                <div id="carte-accueil">
+                    <img src="images/cerveau.png" alt="Illustration médicale liée à la mémoire et au cerveau">
+
+                    <div id="texte-carte">
+                        <h3>Objectif du projet</h3>
+                        <p>
+                            Relier connaissances biomédicales, base de données relationnelle et visualisation
+                            dans un site web.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2ème Section : accès rapides aux différentes pages -->
+        <section id="navigation-rapide">
+            <div id="contenu-navigation">
+                <p id="petit-titre">NAVIGATION RAPIDE</p>
+                <h2>Explorer le projet</h2>
+
+                <!-- Ensemble des cartes de navigation -->
+                <div id="blocs-navigation">
+                    <article class="bloc">
+                        <!-- Carte 1 -->
+                        <p class="numero-bloc">01</p>
+                        <h3>La pathologie</h3>
+                        <p>
+                            Comprendre Alzheimer, ses mécanismes, ses facteurs de risque et son impact en santé publique.
+                        </p>
+                        <a href="#carte-pathologie">Accéder à la page</a>
+                    </article>
+
+                    <article class="bloc">
+                        <!-- Carte 2 -->
+                        <p class="numero-bloc">02</p>
+                        <h3>La base de données</h3>
+                        <p>
+                            Découvrir les jeux de données retenus, le schéma relationnel et les variables exploitées.
+                        </p>
+                        <a href="base-donnees.html">Voir la structure</a>
+                    </article>
+
+                    <article class="bloc">
+                        <!-- Carte 3 -->
+                        <p class="numero-bloc">03</p>
+                        <h3>Les analyses</h3>
+                        <p>
+                            Consulter les statistiques, tableaux et visualisations produites à partir des données.
+                        </p>
+                        <a href="analyses.html">Accéder aux résultats</a>
+                    </article>
+
+                    <article class="bloc">
+                        <!-- Carte 4 -->
+                        <p class="numero-bloc">04</p>
+                        <h3>Les recommandations</h3>
+                        <p>
+                            Consulter les recommandations en santé (site de la HAS).
+                        </p>
+                        <a href="recommandations.html">Accéder aux recommandations</a>
+                    </article>
+
+                    <article class="bloc">
+                        <!-- Carte 5 -->
+                        <p class="numero-bloc">05</p>
+                        <h3>Les recherches</h3>
+                        <p>
+                            Interroger la base de données.
+                        </p>
+                        <a href="interrogation.php">Accéder aux recherches</a>
+                    </article>
+
+                    <article class="bloc">
+                        <!-- Carte 6 -->
+                        <p class="numero-bloc">06</p>
+                        <h3>Les ressources</h3>
+                        <p>
+                            Bibliographie du projet.
+                        </p>
+                        <a href="ressources.html">Accéder aux ressources</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3ème section : but du site -->
+        <section id="presentation-site">
+            <div id="contenu-presentation">
+                <div id="texte-presentation">
+                    <p id="petit-titre-presentation">PRÉSENTATION</p>
+                    <h2>Pourquoi ce site ?</h2>
+
+                    <p>
+                        En Santé Publique, la maladie d’Alzheimer est devenue un <strong>enjeu mondial.</strong>
+                        Elle est notamment due au mauvais fonctionnement du <mark>protéasome</mark> (organite permettant la dégradation des protéines mal repliées).
+                        Cette maladie neuro-dégénérative touche hommes comme femmes, toutes ethnies confondues.
+                        Elle se caractérise par la présence au niveau du système nerveux central, <mark>de plaques séniles extracellulaires.</mark>
+                        Là où l’environnement joue aussi un rôle, les facteurs de risque sont : l’exposition à l’aluminium et aux solvants organiques,
+                        les micro-traumatismes crâniens à répétition et la moindre stimulation intellectuelle.
+                    </p>
+
+                    <p>
+                        Ce projet met en lien une thématique biomédicale, une base de données relationnelle
+                        et une interface web permettant de vous présenter des informations cliniques et des analyses exploratoires.
+                    </p>
+
+                    <p>
+                        Les données utilisées sont fictives et ont été organisées pour illustrer un travail de sélection,
+                        d’intégration et d’exploitation dans une logique de santé publique.
+                    </p>
+                </div>
+
+                <!-- Encadré résumé -->
+                <div id="bloc-resume">
+                    <h3>En bref</h3>
+
+                    <ul id="liste-resume">
+                        <li>Thématique : maladie d’Alzheimer</li>
+                        <li>Approche : santé publique et informatique biomédicale</li>
+                        <li>Outils : HTML/CSS, Python, SQL, visualisations (pandas...), tests statistiques(scikit-learn...)</li>
+                        <li>Fonctions : recherche, consultation, synthèse des données</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4ème section : la pathologie -->
+        <section id="carte-pathologie">
+            <div id="contenu-pathologie">
+                <div id="texte-pathologie">
+                    <p id="petit-titre-pathologie">PATHOLOGIE</p>
+                    <h2>La maladie d’Alzheimer</h2>
+
+                    <p>
+                        Le <a href="https://fr.wikipedia.org/wiki/Prot%C3%A9asome" target="_blank" rel="noopener noreferrer"><strong>protéasome</strong></a>
+                        (ou ubiquitine-protéasome) est un complexe enzymatique multi-catalytique, nécessaire à la viabilité des cellules.
+                        Il est présent dans toutes les cellules eucaryotes (dans le noyau, cytoplasme, associées à la membrane
+                        du réticulum endoplasmique ou au cytosquelette) (Coux et al., 1996).
+                        Son rôle principal se définit par la dégradation des protéines (Rock et al., 1994).
+                    </p>
+
+                    <p>
+                        L’Alzheimer est une maladie neurodégénérative liée au vieillissement.
+                        Les hommes autant que les femmes et toutes ethnies confondues sont susceptibles de la développer.
+                        Elle a été décrite pour la première fois par le psychiatre allemand
+                        <a href="https://fr.wikipedia.org/wiki/Alois_Alzheimer" target="_blank" rel="noopener noreferrer">Aloïs Alzheimer</a>
+                        (1864 - 1915) en 1906 à propos d’une patiente présentant un syndrome démentiel
+                        et des caractéristiques histopathologiques particuliers.
+                    </p>
+
+                    <p>
+                        Elle se caractérise notamment par la présence de <strong>plaques séniles</strong>, <strong>d’amas neurofibrillaires</strong>,
+                        d’une atteinte du système cholinergique et d’une perte neuronale et synaptique.
+                    </p>
+
+                    <ul id="liste-pathologie">
+                        <li>Troubles de la mémoire</li>
+                        <li>Perte neuronale et synaptique</li>
+                        <li>Diminution de l’activité cérébrale</li>
+                        <li>Facteurs génétiques et environnementaux</li>
+                    </ul>
+
+                    <a href="analyses.html" class="bouton bouton-orange">Voir les analyses</a>
+                </div>
+
+                <div id="visuel-pathologie">
+                    <figure class="schema">
+                        <img src="images/schema-proteasome.png" alt="Schéma du rôle du protéasome dans la maladie d’Alzheimer">
+                        <figcaption>Rôle du protéasome dans l’élimination des protéines anormales.</figcaption>
+                        <img src="images/plaques-seniles.png" alt="Présence de plaques séniles dans la maladie d’Alzheimer">
+                        <figcaption>Présence de plaques séniles dans la maladie d’Alzheimer.</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5ème section : espace publicité -->
+        <section id="publicite">
+            <div id="contenu-publicite">
+                <div id="texte-publicite">
+                    <p id="petit-titre-publicite">ESPACE PUBLICITÉ ⚠️</p>
+                    <h2>VERS UN HÔPITAL ALZHEIMER <em>FRIENDLY</em></h2>
+                    <p>
+                        La fondation Médéric-Alzheimer soutient les recherches pour l'inclusion de la pathologie.
+                        Elle vise à apporter un soutien pour des dispositifs d'accompagnements destinés à
+                        <strong>améliorer l'accueil, la prise en soins, le parcours des personnes vivant avec la maladie d'Alzheimer.</strong>
+                    </p>
+                    <a href="https://www.fondation-mederic-alzheimer.org/project/appel-a-projets-2025-vers-un-hopital-alzheimer-friendly/"
+                       target="_blank" rel="noopener noreferrer" class="bouton bouton-orange">
+                        Découvrir l’appel à projets
+                    </a>
+                </div>
+
+                <div id="visuel-publicite">
+                    <img src="images/publicite.jpg" alt="Visuel publicitaire lié à la stimulation cognitive">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer - pied de page -->
+    <footer id="pied-page">
+        <div id="contenu-footer">
+            <div class="colonne-footer">
+                <h2>Groupe HMD</h2>
+                <p>Projet tutoré — M1 Santé publique, parcours Informatique biomédicale.</p>
+            </div>
+
+            <div class="colonne-footer">
+                <h3>Mentions</h3>
+                <p>Copyright © 2026 Groupe HMD. Tous droits réservés.</p>
+                <p>Utilisation à des fins pédagogiques.</p>
+                <p>Mentions légales</p>
+            </div>
+
+            <div class="colonne-footer">
+                <h3>Navigation</h3>
+                <p><a href="#carte-pathologie">Pathologie</a></p>
+                <p><a href="base-donnees.html">Base de données</a></p>
+                <p><a href="analyses.html">Analyses</a></p>
+                <p><a href="recommandations.html">Recommandations</a></p>
+                <p><a href="interrogation.php">Recherche</a></p>
+                <p><a href="ressouces.html">Ressources</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

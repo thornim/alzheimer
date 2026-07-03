@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <!-- Responsive petits écrans -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groupe HMD - Accueil</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Logo + menu principal -->
+    <header id="entete">
+        <div id="barre-haut">
+            <div id="bloc-logo">
+                <a href="index.html" id="lien-logo" aria-label="Retour à la page d'accueil">
+                    <div id="logo-rond">
+                        <img src="images/logo-HMD.png" alt="Logo HMD">
+                    </div>
+                </a>
+
+                <div id="texte-logo">
+                    <h1>Groupe HMD</h1>
+                    <p>Alzheimer & données de santé</p>
+                </div>
+            </div>
+            <!-- Menu de navigation principal -->
+            <nav>
+                <ul id="menu">
+                    <li><a href="index.html#carte-pathologie">Maladie</a></li>
+                    <li><a href="base-donnees.html">Base de données</a></li>
+                    <li><a href="analyses.html">Analyses</a></li>
+                    <li><a href="recommandations.html">Recommandations</a></li>
+                    <li><a href="ressources.html">Ressources</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+    <section id="presentation-site">
+        <div id="contenu-presentation">
+        <div id="texte-presentation">
+            <p id="petit-titre-presentation">BASE DE DONNÉES</p>
+            <h2>Présentation de la base de données</h2>
+
+            <p>
+            Cette page présente la base de données relationnelle conçue dans le cadre
+            du projet tuteuré pour structurer les informations nécessaires à l’étude
+            de la maladie d’Alzheimer. Le jeu de données utilisé permet la
+            classification des personnes atteintes d'Alzheimer.
+            </p>
+
+            <p>
+            La variable cible est l’absence (0 = pas d’Alzheimer) ou la présence
+            (1 = Alzheimer) de la maladie. Le but est d’étudier les facteurs de
+            risque pouvant être impliqués dans l’apparition de la pathologie afin
+            de pouvoir, à terme, développer des modèles prédictifs.
+            </p>
+
+            <p>
+            Le jeu de données comprend 2149 patients, chacun identifié par un ID
+            allant de 4751 à 6900, âgés de 60 à 90 ans. On retrouve des informations
+            démographiques, des facteurs liés au mode de vie, l’historique médical,
+            des mesures cliniques, des évaluations cognitives et fonctionnelles,
+            des symptômes ainsi qu’un diagnostic de la maladie d’Alzheimer.
+            </p>
+
+            <p>
+            La base est structurée autour de la table <strong>Patient</strong>,
+            qui constitue l’entité centrale. À cette table sont rattachés plusieurs
+            blocs thématiques spécialisés par des associations directes 1–1 :
+            mode de vie, historique médical, mesures cliniques, évaluation
+            cognitive et symptômes. Des tables de référence complètent la structure :
+            genre, ethnie, niveau éducatif et diagnostic. La table
+            Irm complète enfin la base en assurant la gestion des images médicales liées à un patient.
+            <br>Nous avons choisis de sélectionner 50 patients pour créer notre base de données comprenant 25 individus sains et 18 individus malades. 
+            </p>
+    </section>
+
+    <section class="database-section">
+        <article class="bloc">
+            <h3>Schéma Entité / Association</h3>
+            <p>
+                Le schéma ci-dessous présente l’organisation globale de la base de données ainsi que les relations entre les différentes tables.
+            </p>
+            <p>
+                <a href="images/DiagrammeEAprojet.pdf" target="_blank" rel="noopener noreferrer" class="bouton bouton-orange">
+                    Ouvrir le schéma E/A en PDF
+                </a>
+            </p>
+        </article>
+    </section>
+
+        <!-- Ensemble des cartes de navigation -->
+        <section id="navigation-rapide">
+            <div id="contenu-navigation">
+                <p id="petit-titre">BASE DE DONNÉES</p>
+                <h2>Les tables principales</h2>
+
+            <div id="blocs-navigation">
+            <article class="bloc">
+                <p class="numero-bloc">01</p>
+                <h3>Patient</h3>
+                <p>
+                Elle regroupe l’identifiant du patient, son âge, ainsi que les références
+                vers son genre, son ethnie et son niveau d’éducation.
+                </p>
+            </article>
+
+            <article class="bloc">
+                <p class="numero-bloc">02</p>
+                <h3>Mode de vie</h3>
+                <p>
+                Elle regroupe les variables liées aux habitudes de vie du patient :
+                IMC, tabagisme, consommation d’alcool, activité physique,
+                qualité de l’alimentation et qualité du sommeil.
+                </p>
+            </article>
+
+            <article class="bloc">
+                <p class="numero-bloc">03</p>
+                <h3>Historique Médical</h3>
+                <p>
+                Elle regroupe les antécédents et facteurs de risque médicaux tels que
+                les maladies cardiovasculaires, le diabète, la dépression,
+                les traumatismes crâniens et l’hypertension.
+                </p>
+            </article>
+
+            <article class="bloc">
+                <p class="numero-bloc">04</p>
+                <h3>Mesures Cliniques</h3>
+                <p>
+                Elle regroupe les principales mesures cliniques et biologiques :
+                pression systolique, pression diastolique, cholestérol total, HDL,
+                LDL et triglycérides.
+                </p>
+            </article>
+
+            <article class="bloc">
+                <p class="numero-bloc">05</p>
+                <h3>Évaluations cognitives</h3>
+                <p>
+                Elle permet d’enregistrer les résultats des évaluations cognitives et
+                fonctionnelles du patient, notamment le MMSE, le score fonctionnel,
+                la mémoire, les troubles du comportement et l’ADL.
+                </p>
+            </article>
+
+            <article class="bloc">
+                <p class="numero-bloc">06</p>
+                <h3>Symptômes</h3>
+                <p>
+                Elle décrit les manifestations observées chez le patient, comme
+                la confusion, la désorientation, les changements de personnalité,
+                les difficultés dans les tâches quotidiennes et l’oubli.
+                </p>
+            </article>
+            </div>
+        </div>
+        </section>
+
+        <section id="navigation-rapide">
+            <div id="contenu-navigation">
+                <p id="petit-titre">RÉFÉRENTIELS</p>
+                <h2>Les tables complémentaires</h2>
+
+            <div id="blocs-navigation">
+            <article class="bloc">
+                <p class="numero-bloc">07</p>
+                <h3>Genre</h3>
+                <p>Table de référence utilisée pour normaliser les catégories de genre (0 : Homme et 1 : Femme).</p>
+            </article>
+
+            <article class="bloc">
+                <p class="numero-bloc">08</p>
+                <h3>Ethnie</h3>
+                <p>Table de référence contenant les libellés associés aux catégories ethniques (0 : Caucasien, 1 : Africain Americain, 2 : Asiatique, 3 : Autres).</p>
+            </article>
+
+            <article class="bloc">
+                <p class="numero-bloc">09</p>
+                <h3>Niveau_Educ</h3>
+                <p>Table de référence utilisée pour standardiser le niveau d’éducation des patients (0 : Aucun, 1 : Lycée, 2 : Licence, 3 : Plus haut).</p>
+            </article>
+
+            <article class="bloc">
+                <p class="numero-bloc">10</p>
+                <h3>Ref_diagnostic</h3>
+                <p>Référentiel des diagnostics de la maladie d'Alzheimer (0 : Pas d'Alzheimer, 1 : Alzheimer).</p>
+            </article>
+
+            <article class="bloc">
+                <p class="numero-bloc">11</p>
+                <h3>Irm</h3>
+                <p>
+                Table permettant d'afficher les images des irms saines et malades, avec l’identifiant du patient,
+                le nom du fichier et le chemin de l’image.
+                </p>
+            </article>
+            </div>
+        </div>
+        </section>
+
+    <!-- footer - pied de page -->
+    <footer id="pied-page">
+        <div id="contenu-footer">
+            <div class="colonne-footer">
+                <h2>Groupe HMD</h2>
+                <p>Projet tutoré — M1 Santé publique, parcours Informatique biomédicale.</p>
+            </div>
+
+            <div class="colonne-footer">
+                <h3>Mentions</h3>
+                <p>Copyright © 2026 Groupe HMD. Tous droits réservés.</p>
+                <p>Utilisation à des fins pédagogiques.</p>
+                <p>Mentions légales</p>
+            </div>
+
+            <div class="colonne-footer">
+                <h3>Navigation</h3>
+                <p><a href="index.html#carte-pathologie">Pathologie</a></p>
+                <p><a href="base-donnees.html">Base de données</a></p>
+                <p><a href="analyses.html">Analyses</a></p>
+                <p><a href="recommandations.html">Recommandations</a></p>
+                <p><a href="ressouces.html">Ressources</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+   

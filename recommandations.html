@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groupe HMD - Recommandations</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="entete">
+        <div id="barre-haut">
+            <div id="bloc-logo">
+                <a href="index.html" id="lien-logo" aria-label="Retour à la page d'accueil">
+                    <div id="logo-rond">
+                        <img src="images/logo-HMD.png" alt="Logo HMD">
+                    </div>
+                </a>
+
+                <div id="texte-logo">
+                    <h1>Groupe HMD</h1>
+                    <p>Alzheimer & données de santé</p>
+                </div>
+            </div>
+
+            <nav>
+                <ul id="menu">
+                    <li><a href="index.html#carte-pathologie">Maladie</a></li>
+                    <li><a href="base-donnees.html">Base de données</a></li>
+                    <li><a href="analyses.html">Analyses</a></li>
+                    <li><a href="recommandations.html">Recommandations</a></li>
+                    <li><a href="ressources.html">Ressources</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="conteneur">
+        <section class="introduction-page">
+            <p class="intro">
+                <strong><mark>Vous avez besoin de recommandations en santé ?</mark></strong>
+                Voici une API que notre équipe a générée pour obtenir des résultats personnalisés.
+                En remplissant ce formulaire en ligne, vous pourrez choisir des critères, des sous-critères ainsi qu'un public visé.
+                Vous pourrez ainsi obtenir une recommandation <strong>personnalisée</strong> en santé sur la maladie d'Alzheimer.
+            </p>
+
+            <img src="images/schema-alz.png" alt="Illustration médicale liée à la mémoire et au cerveau">
+        </section>
+
+        <div class="colonne-droite">
+            <section class="bloc-formulaire">
+                <h2>Paramètres</h2>
+
+                <form id="form-api">
+                    <div class="champ champ-large">
+                        <label for="apiUrl">URL de l’API</label>
+                        <input type="url" id="apiUrl" value="https://alzheimer-br9f.onrender.com/api/recommandations">
+                    </div>
+
+                    <div class="bloc-resultats">
+                        <div class="champ">
+                            <label for="categorie">Catégorie</label>
+                            <select id="categorie">
+                                <option value="">Toutes</option>
+                                <option value="depistage">Dépistage</option>
+                                <option value="diagnostic_precoce">Diagnostic précoce</option>
+                                <option value="evaluation_initiale">Évaluation initiale</option>
+                                <option value="diagnostic">Diagnostic</option>
+                                <option value="examens">Examens</option>
+                                <option value="orientation">Orientation</option>
+                                <option value="annonce">Annonce</option>
+                            </select>
+                        </div>
+
+                        <div class="champ">
+                            <label for="sousCategorie">Sous-catégorie</label>
+                            <select id="sousCategorie" disabled>
+                                <option value="">Toutes</option>
+                            </select>
+                        </div>
+
+                        <div class="champ">
+                            <label for="public">Public</label>
+                            <select id="public">
+                                <option value="">Tous</option>
+                                <option value="professionnel">Professionnel</option>
+                                <option value="patient_aidant">Patient / aidant</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="actions">
+                        <button type="submit" class="btn btn-principal">Tester l’API</button>
+                        <button type="reset" class="btn btn-secondaire" id="btnReset">Réinitialiser</button>
+                    </div>
+                </form>
+
+                <p id="message" class="message"></p>
+            </section>
+
+            <section class="bloc-resultats" id="bloc-resultats">
+                <h2>Résultats</h2>
+                <div id="resume" class="resume-resultats"></div>
+                <div id="resultats" class="liste-resultats"></div>
+            </section>
+        </div>
+    </main>
+
+    <!-- footer - pied de page -->
+    <footer id="pied-page">
+        <div id="contenu-footer">
+            <div class="colonne-footer">
+                <h2>Groupe HMD</h2>
+                <p>Projet tutoré — M1 Santé publique, parcours Informatique biomédicale.</p>
+            </div>
+
+            <div class="colonne-footer">
+                <h3>Mentions</h3>
+                <p>Copyright © 2026 Groupe HMD. Tous droits réservés.</p>
+                <p>Utilisation à des fins pédagogiques.</p>
+                <p>Mentions légales</p>
+            </div>
+
+            <div class="colonne-footer">
+                <h3>Navigation</h3>
+                <p><a href="index.html#carte-pathologie">Pathologie</a></p>
+                <p><a href="base-donnees.html">Base de données</a></p>
+                <p><a href="analyses.html">Analyses</a></p>
+                <p><a href="recommandations.html">Recommandations</a></p>
+                <p><a href="interrogation.php">Recherche</a></p>
+                <p><a href="ressouces.html">Ressources</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
